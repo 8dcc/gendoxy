@@ -851,5 +851,4 @@
 
 (provide 'gendoxy)
 
-
-;;; filename ends here
+;;; gendoxy ends here
