@@ -801,7 +801,7 @@
   "Generate general template for the beginning of a block of items"
   (interactive)
   (move-beginning-of-line 1)
-  (insert (concat "/**" (gendoxy-get-tag "}" 0) " */" gendoxy-nl)))
+  (insert (concat "/** " (gendoxy-get-tag "}" 0) " */" gendoxy-nl)))
 
 (defun gendoxy-group-core (is-full)
   "Generate general template for a block of items and its items if requested"
