@@ -794,16 +794,14 @@
   (move-beginning-of-line nil)
   (insert (concat "/**" gendoxy-nl " * " (gendoxy-get-tag "name")
                   "Group title" gendoxy-nl " * " gendoxy-default-text
-                  gendoxy-nl " * " (gendoxy-get-tag "{" 0)
-                  gendoxy-nl " */" gendoxy-nl)))
+                  gendoxy-nl " * " (gendoxy-get-tag "{" 0) " */" gendoxy-nl)))
 
 ;;;###autoload
 (defun gendoxy-group-end ()
   "Generate general template for the beginning of a block of items"
   (interactive)
   (move-beginning-of-line 1)
-  (insert (concat "/**" gendoxy-nl " * " (gendoxy-get-tag "}" 0) gendoxy-nl
-                  " */" gendoxy-nl)))
+  (insert (concat "/**" (gendoxy-get-tag "}" 0) " */" gendoxy-nl)))
 
 (defun gendoxy-group-core (is-full)
   "Generate general template for a block of items and its items if requested"
