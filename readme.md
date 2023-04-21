@@ -4,6 +4,10 @@
 This plugin generates [doxygen](http://doxygen.org ) documentation from C source code\
 It generates a doxygen documentation skeleton for the most common C constructs
 
+> **Note**  
+> This fork makes the `gendoxy-group-start` and `gendoxy-group-end` comments a
+> bit more compact.
+
 ## Features
 * Dedicated command for module documentation (author, file, date, copyright, etc)
 * Support for _macros_, _functions_, _variables_, _struct_, _enum_ and _typedef_
